@@ -1,0 +1,41 @@
+13.6077 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+15.1777 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E353061CA0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E353061C40>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E353061A90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E3532324C0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='deg', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.1780 	EXP 	window1: mouseVisible = True
+15.1781 	EXP 	window1: backgroundImage = ''
+15.1782 	EXP 	window1: backgroundFit = 'none'
+15.1854 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+15.1855 	EXP 	window1: recordFrameIntervals = False
+15.3433 	EXP 	window1: recordFrameIntervals = True
+15.5267 	EXP 	Screen (0) actual frame rate measured at 60.00Hz
+15.5267 	EXP 	window1: recordFrameIntervals = False
+15.5268 	EXP 	window1: mouseVisible = True
+18.1855 	EXP 	bart: status = STARTED
+18.1857 	EXP 	window1: mouseVisible = True
+18.1907 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1.,  1.]), fillColorSpace='rgb', fillRGB=array([-1., -1.,  1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='polygon', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.1911 	EXP 	window1: mouseVisible = True
+18.2575 	EXP 	Created pump = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='pump', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='pump', units='deg', win=Window(...), wrapWidth=15.0)
+0.0113 	EXP 	polygon: autoDraw = True
+0.0113 	EXP 	pump: autoDraw = True
+1.0104 	EXP 	pump: autoDraw = False
+3.6188 	DATA 	Keypress: space
+4.0183 	DATA 	Mouse: Left button down, pos=(1013,489)
+4.1019 	DATA 	Mouse:  Left button up, pos=(1013,489)
+4.5860 	DATA 	Mouse: Left button down, pos=(645,386)
+4.6867 	DATA 	Mouse:  Left button up, pos=(645,386)
+4.9201 	DATA 	Mouse: Left button down, pos=(655,624)
+5.0369 	DATA 	Mouse:  Left button up, pos=(689,624)
+5.2544 	DATA 	Mouse: Left button down, pos=(775,562)
+5.3379 	DATA 	Mouse:  Left button up, pos=(776,553)
+5.4715 	DATA 	Mouse: Left button down, pos=(812,438)
+5.5050 	DATA 	Mouse:  Left button up, pos=(815,434)
+5.7555 	DATA 	Mouse: Left button down, pos=(1200,432)
+5.8389 	DATA 	Mouse:  Left button up, pos=(1224,436)
+5.9222 	DATA 	Mouse: Left button down, pos=(1251,445)
+6.0226 	DATA 	Mouse:  Left button up, pos=(1251,445)
+6.7254 	DATA 	Mouse: Left button down, pos=(600,172)
+6.8079 	DATA 	Mouse:  Left button up, pos=(600,172)
+7.0582 	DATA 	Keypress: escape
+7.1240 	EXP 	bart: status = STOPPED
+7.1401 	EXP 	polygon: autoDraw = False
+7.1402 	EXP 	bart: status = STOPPED
+7.3608 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,100 @@
+7.6101 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+9.2287 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019F52A53CA0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019F52A53C40>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019F52A53A90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019F52C635E0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.2288 	EXP 	window1: mouseVisible = True
+9.2289 	EXP 	window1: backgroundImage = ''
+9.2289 	EXP 	window1: backgroundFit = 'none'
+9.2319 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.2320 	EXP 	window1: recordFrameIntervals = False
+9.3953 	EXP 	window1: recordFrameIntervals = True
+9.5794 	EXP 	Screen (0) actual frame rate measured at 59.90Hz
+9.5794 	EXP 	window1: recordFrameIntervals = False
+9.5795 	EXP 	window1: mouseVisible = True
+12.6368 	EXP 	bart: status = STARTED
+12.6371 	EXP 	window1: mouseVisible = True
+12.6407 	EXP 	Created balloon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'bottom'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1.,  1.]), fillColorSpace='rgb', fillRGB=array([-1., -1.,  1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='balloon', opacity=1.0, ori=0.0, pos=array([ 0. , -0.9]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+12.6409 	EXP 	window1: mouseVisible = True
+12.7146 	EXP 	Created pump = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='pump', opacity=1.0, ori=0.0, pos=array([ 0.9, -0.9]), rgb=UNKNOWN, text='press "L" to PUMP', units='norm', win=Window(...), wrapWidth=1)
+12.7148 	EXP 	window1: mouseVisible = True
+12.7233 	EXP 	Created bank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='bank', opacity=1.0, ori=0.0, pos=array([-0.9, -0.9]), rgb=UNKNOWN, text='press "A" to BANK', units='norm', win=Window(...), wrapWidth=1)
+0.0037 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+0.0040 	EXP 	New trial (rep=0, index=0): None
+0.0105 	EXP 	balloon: autoDraw = True
+0.0105 	EXP 	pump: autoDraw = True
+0.0105 	EXP 	bank: autoDraw = True
+1.0528 	DATA 	Keypress: l
+1.4165 	DATA 	Keypress: l
+1.7004 	DATA 	Keypress: l
+1.9510 	DATA 	Keypress: l
+2.2349 	DATA 	Keypress: l
+2.5188 	DATA 	Keypress: l
+2.8057 	DATA 	Keypress: l
+3.1038 	DATA 	Keypress: l
+3.4043 	DATA 	Keypress: l
+3.4057 	EXP 	New trial (rep=1, index=0): None
+3.4199 	EXP 	balloon: autoDraw = False
+3.4199 	EXP 	pump: autoDraw = False
+3.4199 	EXP 	bank: autoDraw = False
+3.4199 	EXP 	balloon: autoDraw = True
+3.4199 	EXP 	pump: autoDraw = True
+3.4199 	EXP 	bank: autoDraw = True
+4.1724 	DATA 	Keypress: l
+4.4563 	DATA 	Keypress: l
+4.6735 	DATA 	Keypress: l
+4.8597 	DATA 	Keypress: l
+4.8749 	EXP 	New trial (rep=2, index=0): None
+4.8897 	EXP 	balloon: autoDraw = False
+4.8897 	EXP 	pump: autoDraw = False
+4.8897 	EXP 	bank: autoDraw = False
+4.8897 	EXP 	balloon: autoDraw = True
+4.8897 	EXP 	pump: autoDraw = True
+4.8897 	EXP 	bank: autoDraw = True
+5.0745 	DATA 	Keypress: l
+5.5086 	DATA 	Keypress: l
+5.7090 	DATA 	Keypress: l
+5.9263 	DATA 	Keypress: l
+6.1267 	DATA 	Keypress: l
+6.3442 	DATA 	Keypress: l
+6.5445 	DATA 	Keypress: l
+6.7612 	DATA 	Keypress: l
+6.9784 	DATA 	Keypress: l
+7.1822 	DATA 	Keypress: l
+7.1981 	EXP 	New trial (rep=3, index=0): None
+7.2112 	EXP 	balloon: autoDraw = False
+7.2112 	EXP 	pump: autoDraw = False
+7.2112 	EXP 	bank: autoDraw = False
+7.2112 	EXP 	balloon: autoDraw = True
+7.2112 	EXP 	pump: autoDraw = True
+7.2112 	EXP 	bank: autoDraw = True
+7.3794 	DATA 	Keypress: l
+7.5964 	DATA 	Keypress: l
+7.7801 	DATA 	Keypress: l
+7.9471 	DATA 	Keypress: l
+8.1019 	DATA 	Keypress: l
+8.2812 	DATA 	Keypress: l
+8.4482 	DATA 	Keypress: l
+8.6377 	DATA 	Keypress: l
+8.8160 	DATA 	Keypress: l
+8.9995 	DATA 	Keypress: l
+9.0009 	EXP 	New trial (rep=4, index=0): None
+9.0152 	EXP 	balloon: autoDraw = False
+9.0152 	EXP 	pump: autoDraw = False
+9.0152 	EXP 	bank: autoDraw = False
+9.0152 	EXP 	balloon: autoDraw = True
+9.0152 	EXP 	pump: autoDraw = True
+9.0152 	EXP 	bank: autoDraw = True
+9.1834 	DATA 	Keypress: l
+9.4363 	DATA 	Keypress: l
+9.6174 	DATA 	Keypress: l
+9.7845 	DATA 	Keypress: l
+9.9350 	DATA 	Keypress: l
+10.1019 	DATA 	Keypress: l
+10.2857 	DATA 	Keypress: l
+10.4693 	DATA 	Keypress: l
+10.6530 	DATA 	Keypress: l
+10.8365 	DATA 	Keypress: l
+11.0372 	DATA 	Keypress: l
+11.0530 	EXP 	balloon: autoDraw = False
+11.0530 	EXP 	pump: autoDraw = False
+11.0530 	EXP 	bank: autoDraw = False
+11.0531 	EXP 	bart: status = STOPPED
+11.3228 	EXP 	window1: mouseVisible = True

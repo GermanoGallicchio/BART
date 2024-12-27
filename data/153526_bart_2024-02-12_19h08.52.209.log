@@ -1,0 +1,31 @@
+7.0038 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+8.5646 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002145E1D1CD0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002145E1D1C70>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002145E1D1AF0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002145E4B3730>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='deg', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.5647 	EXP 	window1: mouseVisible = True
+8.5647 	EXP 	window1: backgroundImage = ''
+8.5647 	EXP 	window1: backgroundFit = 'none'
+8.5668 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.5669 	EXP 	window1: recordFrameIntervals = False
+8.7312 	EXP 	window1: recordFrameIntervals = True
+8.9153 	EXP 	Screen (0) actual frame rate measured at 59.88Hz
+8.9153 	EXP 	window1: recordFrameIntervals = False
+8.9155 	EXP 	window1: mouseVisible = True
+11.5675 	EXP 	bart: status = STARTED
+11.5677 	EXP 	window1: mouseVisible = True
+11.5713 	EXP 	Created balloon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'bottom'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1.,  1.]), fillColorSpace='rgb', fillRGB=array([-1., -1.,  1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='balloon', opacity=1.0, ori=0.0, pos=array([ 0. , -0.9]), size=array([0.1, 0.3]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+11.5715 	EXP 	window1: mouseVisible = True
+11.6387 	EXP 	Created pump = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='pump', opacity=1.0, ori=0.0, pos=array([ 0.9, -0.9]), rgb=UNKNOWN, text='PUMP', units='norm', win=Window(...), wrapWidth=1)
+11.6388 	EXP 	window1: mouseVisible = True
+11.6475 	EXP 	Created bank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='bank', opacity=1.0, ori=0.0, pos=array([-0.9, -0.9]), rgb=UNKNOWN, text='BANK', units='norm', win=Window(...), wrapWidth=1)
+11.6476 	EXP 	window1: mouseVisible = True
+0.0103 	EXP 	balloon: autoDraw = True
+0.0103 	EXP 	pump: autoDraw = True
+0.0103 	EXP 	bank: autoDraw = True
+5.0509 	DATA 	Mouse: Left button down, pos=(890,547)
+5.1512 	DATA 	Mouse:  Left button up, pos=(890,547)
+6.2536 	DATA 	Mouse: Left button down, pos=(1837,39)
+6.2696 	EXP 	balloon: autoDraw = False
+6.2696 	EXP 	pump: autoDraw = False
+6.2696 	EXP 	bank: autoDraw = False
+6.2697 	EXP 	bart: status = STOPPED
+6.3582 	DATA 	Mouse:  Left button up, pos=(1837,39)
+6.4821 	EXP 	window1: mouseVisible = True

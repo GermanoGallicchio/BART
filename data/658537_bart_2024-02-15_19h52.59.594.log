@@ -1,0 +1,110 @@
+9.6106 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+11.1864 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D8F6196CA0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D8F6196C40>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D8F6196AC0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001D8F63696A0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.1866 	EXP 	window1: mouseVisible = True
+11.1867 	EXP 	window1: backgroundImage = ''
+11.1867 	EXP 	window1: backgroundFit = 'none'
+11.1906 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.1907 	EXP 	window1: recordFrameIntervals = False
+11.3524 	EXP 	window1: recordFrameIntervals = True
+11.5364 	EXP 	Screen (0) actual frame rate measured at 59.92Hz
+11.5365 	EXP 	window1: recordFrameIntervals = False
+11.5368 	EXP 	window1: mouseVisible = True
+14.4525 	EXP 	bart: status = STARTED
+14.4528 	EXP 	window1: mouseVisible = True
+14.4562 	EXP 	Created balloon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'bottom'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1.,  1.]), fillColorSpace='rgb', fillRGB=array([-1., -1.,  1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='balloon', opacity=1.0, ori=0.0, pos=array([ 0. , -0.8]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.4564 	EXP 	window1: mouseVisible = True
+14.5325 	EXP 	Created bank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='bank', opacity=1.0, ori=0.0, pos=array([-0.7, -0.9]), rgb=UNKNOWN, text='press "A" to BANK', units='norm', win=Window(...), wrapWidth=1)
+14.5327 	EXP 	window1: mouseVisible = True
+14.5412 	EXP 	Created pump = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='pump', opacity=1.0, ori=0.0, pos=array([ 0. , -0.9]), rgb=UNKNOWN, text='press "L" to PUMP', units='norm', win=Window(...), wrapWidth=1)
+14.5414 	EXP 	window1: mouseVisible = True
+14.5430 	EXP 	Created earning = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='earning', opacity=1.0, ori=0.0, pos=array([ 0.7, -0.8]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+14.5431 	EXP 	window1: mouseVisible = True
+14.5445 	EXP 	Created earningpreviousBalloon = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='earningpreviousBalloon', opacity=1.0, ori=0.0, pos=array([ 0.7, -0.9]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+14.5446 	EXP 	window1: mouseVisible = True
+14.5459 	EXP 	Created debugText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='debugText', opacity=1.0, ori=0.0, pos=array([0. , 0.9]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+14.5460 	EXP 	window1: mouseVisible = True
+14.5533 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='BANG!!', units='norm', win=Window(...), wrapWidth=1)
+14.5534 	EXP 	window1: mouseVisible = True
+14.5548 	EXP 	Created feedbackFinal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbackFinal', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+0.0034 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+0.0036 	EXP 	New trial (rep=0, index=0): None
+0.0379 	EXP 	balloon: autoDraw = True
+0.0379 	EXP 	bank: autoDraw = True
+0.0379 	EXP 	pump: autoDraw = True
+0.0379 	EXP 	earning: autoDraw = True
+0.0379 	EXP 	earningpreviousBalloon: autoDraw = True
+0.0379 	EXP 	debugText: autoDraw = True
+0.6972 	DATA 	Keypress: l
+1.3837 	DATA 	Keypress: l
+1.8013 	DATA 	Keypress: l
+1.8263 	EXP 	balloon: autoDraw = False
+1.8263 	EXP 	bank: autoDraw = False
+1.8263 	EXP 	pump: autoDraw = False
+1.8263 	EXP 	earning: autoDraw = False
+1.8263 	EXP 	earningpreviousBalloon: autoDraw = False
+1.8263 	EXP 	debugText: autoDraw = False
+1.8263 	EXP 	text: autoDraw = True
+2.3099 	EXP 	New trial (rep=1, index=0): None
+2.3310 	EXP 	text: autoDraw = False
+2.3310 	EXP 	text: autoDraw = False
+2.3310 	EXP 	balloon: autoDraw = True
+2.3310 	EXP 	bank: autoDraw = True
+2.3310 	EXP 	pump: autoDraw = True
+2.3310 	EXP 	earning: autoDraw = True
+2.3310 	EXP 	earningpreviousBalloon: autoDraw = True
+2.3310 	EXP 	debugText: autoDraw = True
+3.9760 	DATA 	Keypress: l
+4.5088 	DATA 	Keypress: l
+4.9915 	DATA 	Keypress: l
+5.6133 	DATA 	Keypress: l
+6.7235 	DATA 	Keypress: l
+7.0903 	DATA 	Keypress: l
+7.7400 	DATA 	Keypress: l
+7.7547 	EXP 	balloon: autoDraw = False
+7.7547 	EXP 	bank: autoDraw = False
+7.7547 	EXP 	pump: autoDraw = False
+7.7547 	EXP 	earning: autoDraw = False
+7.7547 	EXP 	earningpreviousBalloon: autoDraw = False
+7.7547 	EXP 	debugText: autoDraw = False
+7.7547 	EXP 	text: autoDraw = True
+8.2383 	EXP 	New trial (rep=2, index=0): None
+8.2556 	EXP 	text: autoDraw = False
+8.2556 	EXP 	text: autoDraw = False
+8.2556 	EXP 	balloon: autoDraw = True
+8.2556 	EXP 	bank: autoDraw = True
+8.2556 	EXP 	pump: autoDraw = True
+8.2556 	EXP 	earning: autoDraw = True
+8.2556 	EXP 	earningpreviousBalloon: autoDraw = True
+8.2556 	EXP 	debugText: autoDraw = True
+9.2548 	DATA 	Keypress: l
+9.5879 	DATA 	Keypress: l
+9.9212 	DATA 	Keypress: l
+10.2540 	DATA 	Keypress: l
+10.6538 	DATA 	Keypress: l
+11.4944 	DATA 	Keypress: a
+11.5184 	EXP 	balloon: autoDraw = False
+11.5184 	EXP 	bank: autoDraw = False
+11.5184 	EXP 	pump: autoDraw = False
+11.5184 	EXP 	earning: autoDraw = False
+11.5184 	EXP 	earningpreviousBalloon: autoDraw = False
+11.5184 	EXP 	debugText: autoDraw = False
+11.5184 	EXP 	text: autoDraw = True
+12.0025 	EXP 	New trial (rep=3, index=0): None
+12.0250 	EXP 	text: autoDraw = False
+12.0250 	EXP 	text: autoDraw = False
+12.0250 	EXP 	balloon: autoDraw = True
+12.0250 	EXP 	bank: autoDraw = True
+12.0250 	EXP 	pump: autoDraw = True
+12.0250 	EXP 	earning: autoDraw = True
+12.0250 	EXP 	earningpreviousBalloon: autoDraw = True
+12.0250 	EXP 	debugText: autoDraw = True
+12.5522 	DATA 	Keypress: escape
+12.6356 	EXP 	bart: status = STOPPED
+12.6510 	EXP 	balloon: autoDraw = False
+12.6510 	EXP 	bank: autoDraw = False
+12.6510 	EXP 	pump: autoDraw = False
+12.6510 	EXP 	earning: autoDraw = False
+12.6510 	EXP 	earningpreviousBalloon: autoDraw = False
+12.6510 	EXP 	debugText: autoDraw = False
+12.6511 	EXP 	bart: status = STOPPED
+12.8133 	EXP 	window1: mouseVisible = True

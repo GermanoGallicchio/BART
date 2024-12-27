@@ -1,0 +1,912 @@
+11.5019 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+13.5722 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FF09A04C40>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FF09A04BE0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FF09A04A00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001FF09B99940>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.5723 	EXP 	window1: mouseVisible = True
+13.5723 	EXP 	window1: backgroundImage = ''
+13.5723 	EXP 	window1: backgroundFit = 'none'
+13.5745 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.5746 	EXP 	window1: recordFrameIntervals = False
+13.7386 	EXP 	window1: recordFrameIntervals = True
+13.9217 	EXP 	Screen (0) actual frame rate measured at 60.12Hz
+13.9217 	EXP 	window1: recordFrameIntervals = False
+13.9218 	EXP 	window1: mouseVisible = True
+16.7509 	EXP 	bart: status = STARTED
+16.7512 	EXP 	window1: mouseVisible = True
+16.7550 	EXP 	Created balloon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'bottom'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1.,  1.]), fillColorSpace='rgb', fillRGB=array([-1., -1.,  1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='balloon', opacity=1.0, ori=0.0, pos=array([ 0. , -0.8]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.7554 	EXP 	window1: mouseVisible = True
+16.8635 	EXP 	Created bank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='bank', opacity=1.0, ori=0.0, pos=array([-0.7, -0.9]), rgb=UNKNOWN, text='press "A" to BANK', units='norm', win=Window(...), wrapWidth=1)
+16.8637 	EXP 	window1: mouseVisible = True
+16.8726 	EXP 	Created pump = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='pump', opacity=1.0, ori=0.0, pos=array([ 0. , -0.9]), rgb=UNKNOWN, text='press "L" to PUMP', units='norm', win=Window(...), wrapWidth=1)
+16.8727 	EXP 	window1: mouseVisible = True
+16.8741 	EXP 	Created earning = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='earning', opacity=1.0, ori=0.0, pos=array([ 0.7, -0.8]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+16.8742 	EXP 	window1: mouseVisible = True
+16.8756 	EXP 	Created earningpreviousBalloon = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='earningpreviousBalloon', opacity=1.0, ori=0.0, pos=array([ 0.7, -0.9]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+16.8757 	EXP 	window1: mouseVisible = True
+16.8770 	EXP 	Created debugText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='debugText', opacity=1.0, ori=0.0, pos=array([0. , 0.9]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+16.8771 	EXP 	window1: mouseVisible = True
+16.8895 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='BOOM!!', units='norm', win=Window(...), wrapWidth=1)
+17.4796 	EXP 	Sound soundEffect set volume 1.000
+17.4798 	EXP 	window1: mouseVisible = True
+17.4813 	EXP 	Created feedbackFinal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbackFinal', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+0.0038 	EXP 	Created sequence: sequential, trialTypes=1, nReps=32, seed=None
+0.0042 	EXP 	New trial (rep=0, index=0): None
+0.0422 	EXP 	balloon: autoDraw = True
+0.0422 	EXP 	bank: autoDraw = True
+0.0422 	EXP 	pump: autoDraw = True
+0.0422 	EXP 	earning: autoDraw = True
+0.0422 	EXP 	earningpreviousBalloon: autoDraw = True
+0.0422 	EXP 	debugText: autoDraw = True
+12.0165 	DATA 	Mouse: Left button down, pos=(107,714)
+12.0951 	DATA 	Mouse:  Left button up, pos=(107,714)
+12.7122 	DATA 	Keypress: l
+12.8609 	DATA 	Keypress: l
+12.8766 	EXP 	Sound soundEffect started
+12.8765 	EXP 	balloon: autoDraw = False
+12.8765 	EXP 	bank: autoDraw = False
+12.8765 	EXP 	pump: autoDraw = False
+12.8765 	EXP 	earning: autoDraw = False
+12.8765 	EXP 	earningpreviousBalloon: autoDraw = False
+12.8765 	EXP 	debugText: autoDraw = False
+12.8765 	EXP 	text: autoDraw = True
+13.0288 	DATA 	Keypress: l
+13.4636 	EXP 	Sound soundEffect reached end of file
+13.4636 	EXP 	Sound soundEffect reached end of file
+13.8599 	EXP 	New trial (rep=1, index=0): None
+13.8789 	EXP 	text: autoDraw = False
+13.8789 	EXP 	text: autoDraw = False
+13.8789 	EXP 	balloon: autoDraw = True
+13.8789 	EXP 	bank: autoDraw = True
+13.8789 	EXP 	pump: autoDraw = True
+13.8789 	EXP 	earning: autoDraw = True
+13.8789 	EXP 	earningpreviousBalloon: autoDraw = True
+13.8789 	EXP 	debugText: autoDraw = True
+14.6929 	DATA 	Keypress: l
+15.4422 	DATA 	Keypress: l
+15.4578 	EXP 	Sound soundEffect started
+15.4577 	EXP 	balloon: autoDraw = False
+15.4577 	EXP 	bank: autoDraw = False
+15.4577 	EXP 	pump: autoDraw = False
+15.4577 	EXP 	earning: autoDraw = False
+15.4577 	EXP 	earningpreviousBalloon: autoDraw = False
+15.4577 	EXP 	debugText: autoDraw = False
+15.4577 	EXP 	text: autoDraw = True
+16.0236 	EXP 	Sound soundEffect reached end of file
+16.0236 	EXP 	Sound soundEffect reached end of file
+16.4411 	EXP 	New trial (rep=2, index=0): None
+16.4568 	EXP 	text: autoDraw = False
+16.4568 	EXP 	text: autoDraw = False
+16.4568 	EXP 	balloon: autoDraw = True
+16.4568 	EXP 	bank: autoDraw = True
+16.4568 	EXP 	pump: autoDraw = True
+16.4568 	EXP 	earning: autoDraw = True
+16.4568 	EXP 	earningpreviousBalloon: autoDraw = True
+16.4568 	EXP 	debugText: autoDraw = True
+19.7055 	DATA 	Keypress: l
+20.0053 	DATA 	Keypress: l
+20.2049 	DATA 	Keypress: l
+20.5046 	DATA 	Keypress: l
+20.8377 	DATA 	Keypress: l
+21.1878 	DATA 	Keypress: lalt
+24.8680 	DATA 	Keypress: l
+25.1722 	DATA 	Keypress: l
+25.3341 	DATA 	Keypress: l
+26.3666 	DATA 	Keypress: a
+26.3822 	EXP 	Sound soundEffect started
+26.3962 	EXP 	Sound soundEffect stopped
+26.3971 	EXP 	New trial (rep=3, index=0): None
+26.4154 	EXP 	balloon: autoDraw = False
+26.4154 	EXP 	bank: autoDraw = False
+26.4154 	EXP 	pump: autoDraw = False
+26.4154 	EXP 	earning: autoDraw = False
+26.4154 	EXP 	earningpreviousBalloon: autoDraw = False
+26.4154 	EXP 	debugText: autoDraw = False
+26.4154 	EXP 	text: autoDraw = True
+26.4154 	EXP 	text: autoDraw = False
+26.4154 	EXP 	text: autoDraw = False
+26.4154 	EXP 	balloon: autoDraw = True
+26.4154 	EXP 	bank: autoDraw = True
+26.4154 	EXP 	pump: autoDraw = True
+26.4154 	EXP 	earning: autoDraw = True
+26.4154 	EXP 	earningpreviousBalloon: autoDraw = True
+26.4154 	EXP 	debugText: autoDraw = True
+27.3044 	DATA 	Keypress: l
+27.4544 	DATA 	Keypress: l
+27.6156 	DATA 	Keypress: l
+27.7654 	DATA 	Keypress: l
+27.9819 	DATA 	Keypress: a
+27.9975 	EXP 	Sound soundEffect started
+27.9859 	EXP 	Sound soundEffect stopped
+27.9868 	EXP 	New trial (rep=4, index=0): None
+28.0046 	EXP 	balloon: autoDraw = False
+28.0046 	EXP 	bank: autoDraw = False
+28.0046 	EXP 	pump: autoDraw = False
+28.0046 	EXP 	earning: autoDraw = False
+28.0046 	EXP 	earningpreviousBalloon: autoDraw = False
+28.0046 	EXP 	debugText: autoDraw = False
+28.0046 	EXP 	text: autoDraw = True
+28.0046 	EXP 	text: autoDraw = False
+28.0046 	EXP 	text: autoDraw = False
+28.0046 	EXP 	balloon: autoDraw = True
+28.0046 	EXP 	bank: autoDraw = True
+28.0046 	EXP 	pump: autoDraw = True
+28.0046 	EXP 	earning: autoDraw = True
+28.0046 	EXP 	earningpreviousBalloon: autoDraw = True
+28.0046 	EXP 	debugText: autoDraw = True
+28.3483 	DATA 	Keypress: l
+28.5024 	DATA 	Keypress: l
+28.6650 	DATA 	Keypress: l
+28.8312 	DATA 	Keypress: l
+28.9976 	DATA 	Keypress: l
+29.1809 	DATA 	Keypress: l
+29.3476 	DATA 	Keypress: l
+29.4974 	DATA 	Keypress: l
+29.6514 	DATA 	Keypress: l
+29.8138 	DATA 	Keypress: l
+29.9802 	DATA 	Keypress: l
+30.1470 	DATA 	Keypress: l
+30.3137 	DATA 	Keypress: l
+30.4800 	DATA 	Keypress: l
+30.6510 	DATA 	Keypress: l
+30.8131 	DATA 	Keypress: l
+31.0131 	DATA 	Keypress: a
+31.0288 	EXP 	Sound soundEffect started
+31.0462 	EXP 	Sound soundEffect stopped
+31.0474 	EXP 	New trial (rep=5, index=0): None
+31.0689 	EXP 	balloon: autoDraw = False
+31.0689 	EXP 	bank: autoDraw = False
+31.0689 	EXP 	pump: autoDraw = False
+31.0689 	EXP 	earning: autoDraw = False
+31.0689 	EXP 	earningpreviousBalloon: autoDraw = False
+31.0689 	EXP 	debugText: autoDraw = False
+31.0689 	EXP 	text: autoDraw = True
+31.0689 	EXP 	text: autoDraw = False
+31.0689 	EXP 	text: autoDraw = False
+31.0689 	EXP 	balloon: autoDraw = True
+31.0689 	EXP 	bank: autoDraw = True
+31.0689 	EXP 	pump: autoDraw = True
+31.0689 	EXP 	earning: autoDraw = True
+31.0689 	EXP 	earningpreviousBalloon: autoDraw = True
+31.0689 	EXP 	debugText: autoDraw = True
+31.6123 	DATA 	Keypress: l
+31.7502 	DATA 	Keypress: l
+31.9119 	DATA 	Keypress: l
+32.0689 	DATA 	Keypress: l
+32.2450 	DATA 	Keypress: l
+32.4162 	DATA 	Keypress: l
+32.6947 	DATA 	Keypress: l
+32.8611 	DATA 	Keypress: l
+33.0156 	DATA 	Keypress: l
+33.1779 	DATA 	Keypress: l
+33.3852 	DATA 	Keypress: a
+33.4096 	EXP 	Sound soundEffect started
+33.4163 	EXP 	Sound soundEffect stopped
+33.4175 	EXP 	New trial (rep=6, index=0): None
+33.4397 	EXP 	balloon: autoDraw = False
+33.4397 	EXP 	bank: autoDraw = False
+33.4397 	EXP 	pump: autoDraw = False
+33.4397 	EXP 	earning: autoDraw = False
+33.4397 	EXP 	earningpreviousBalloon: autoDraw = False
+33.4397 	EXP 	debugText: autoDraw = False
+33.4397 	EXP 	text: autoDraw = True
+33.4397 	EXP 	text: autoDraw = False
+33.4397 	EXP 	text: autoDraw = False
+33.4397 	EXP 	balloon: autoDraw = True
+33.4397 	EXP 	bank: autoDraw = True
+33.4397 	EXP 	pump: autoDraw = True
+33.4397 	EXP 	earning: autoDraw = True
+33.4397 	EXP 	earningpreviousBalloon: autoDraw = True
+33.4397 	EXP 	debugText: autoDraw = True
+33.5278 	DATA 	Keypress: l
+33.6775 	DATA 	Keypress: l
+33.8328 	DATA 	Keypress: l
+34.0167 	DATA 	Keypress: l
+34.1600 	DATA 	Keypress: l
+34.3100 	DATA 	Keypress: l
+34.4987 	DATA 	Keypress: l
+34.6600 	DATA 	Keypress: l
+34.8267 	DATA 	Keypress: l
+34.9929 	DATA 	Keypress: l
+35.1484 	DATA 	Keypress: l
+35.3263 	DATA 	Keypress: a
+35.3417 	EXP 	Sound soundEffect started
+35.3557 	EXP 	Sound soundEffect stopped
+35.3568 	EXP 	New trial (rep=7, index=0): None
+35.3758 	EXP 	balloon: autoDraw = False
+35.3758 	EXP 	bank: autoDraw = False
+35.3758 	EXP 	pump: autoDraw = False
+35.3758 	EXP 	earning: autoDraw = False
+35.3758 	EXP 	earningpreviousBalloon: autoDraw = False
+35.3758 	EXP 	debugText: autoDraw = False
+35.3758 	EXP 	text: autoDraw = True
+35.3758 	EXP 	text: autoDraw = False
+35.3758 	EXP 	text: autoDraw = False
+35.3758 	EXP 	balloon: autoDraw = True
+35.3758 	EXP 	bank: autoDraw = True
+35.3758 	EXP 	pump: autoDraw = True
+35.3758 	EXP 	earning: autoDraw = True
+35.3758 	EXP 	earningpreviousBalloon: autoDraw = True
+35.3758 	EXP 	debugText: autoDraw = True
+35.4756 	DATA 	Keypress: l
+35.6256 	DATA 	Keypress: l
+35.7921 	DATA 	Keypress: l
+35.9419 	DATA 	Keypress: l
+36.1180 	DATA 	Keypress: l
+36.3084 	DATA 	Keypress: l
+36.4749 	DATA 	Keypress: l
+36.6414 	DATA 	Keypress: l
+36.7960 	DATA 	Keypress: l
+36.9747 	DATA 	Keypress: l
+37.1415 	DATA 	Keypress: l
+37.3080 	DATA 	Keypress: l
+37.4799 	DATA 	Keypress: l
+37.6407 	DATA 	Keypress: l
+37.7793 	DATA 	Keypress: l
+37.9075 	DATA 	Keypress: a
+37.9229 	EXP 	Sound soundEffect started
+37.9161 	EXP 	Sound soundEffect stopped
+37.9170 	EXP 	New trial (rep=8, index=0): None
+37.9356 	EXP 	balloon: autoDraw = False
+37.9356 	EXP 	bank: autoDraw = False
+37.9356 	EXP 	pump: autoDraw = False
+37.9356 	EXP 	earning: autoDraw = False
+37.9356 	EXP 	earningpreviousBalloon: autoDraw = False
+37.9356 	EXP 	debugText: autoDraw = False
+37.9356 	EXP 	text: autoDraw = True
+37.9356 	EXP 	text: autoDraw = False
+37.9356 	EXP 	text: autoDraw = False
+37.9356 	EXP 	balloon: autoDraw = True
+37.9356 	EXP 	bank: autoDraw = True
+37.9356 	EXP 	pump: autoDraw = True
+37.9356 	EXP 	earning: autoDraw = True
+37.9356 	EXP 	earningpreviousBalloon: autoDraw = True
+37.9356 	EXP 	debugText: autoDraw = True
+38.0944 	DATA 	Keypress: l
+38.2399 	DATA 	Keypress: l
+38.4113 	DATA 	Keypress: l
+38.5730 	DATA 	Keypress: l
+38.7397 	DATA 	Keypress: l
+38.9064 	DATA 	Keypress: l
+39.0728 	DATA 	Keypress: l
+39.2277 	DATA 	Keypress: l
+39.4059 	DATA 	Keypress: l
+39.5722 	DATA 	Keypress: l
+39.7393 	DATA 	Keypress: l
+39.9101 	DATA 	Keypress: l
+40.1057 	DATA 	Keypress: l
+40.2944 	DATA 	Keypress: l
+40.4785 	DATA 	Keypress: a
+40.5039 	EXP 	Sound soundEffect started
+40.4957 	EXP 	Sound soundEffect stopped
+40.4965 	EXP 	New trial (rep=9, index=0): None
+40.5173 	EXP 	balloon: autoDraw = False
+40.5173 	EXP 	bank: autoDraw = False
+40.5173 	EXP 	pump: autoDraw = False
+40.5173 	EXP 	earning: autoDraw = False
+40.5173 	EXP 	earningpreviousBalloon: autoDraw = False
+40.5173 	EXP 	debugText: autoDraw = False
+40.5173 	EXP 	text: autoDraw = True
+40.5173 	EXP 	text: autoDraw = False
+40.5173 	EXP 	text: autoDraw = False
+40.5173 	EXP 	balloon: autoDraw = True
+40.5173 	EXP 	bank: autoDraw = True
+40.5173 	EXP 	pump: autoDraw = True
+40.5173 	EXP 	earning: autoDraw = True
+40.5173 	EXP 	earningpreviousBalloon: autoDraw = True
+40.5173 	EXP 	debugText: autoDraw = True
+40.6215 	DATA 	Keypress: l
+40.7881 	DATA 	Keypress: l
+40.9381 	DATA 	Keypress: l
+41.1043 	DATA 	Keypress: l
+41.2593 	DATA 	Keypress: l
+41.4375 	DATA 	Keypress: l
+41.6040 	DATA 	Keypress: l
+41.7873 	DATA 	Keypress: l
+41.9537 	DATA 	Keypress: l
+42.1247 	DATA 	Keypress: l
+42.2914 	DATA 	Keypress: l
+42.4532 	DATA 	Keypress: l
+42.6201 	DATA 	Keypress: l
+42.8033 	DATA 	Keypress: l
+42.9697 	DATA 	Keypress: l
+43.1079 	DATA 	Keypress: l
+43.3240 	DATA 	Keypress: a
+43.3518 	EXP 	Sound soundEffect started
+43.3465 	EXP 	Sound soundEffect stopped
+43.3472 	EXP 	New trial (rep=10, index=0): None
+43.3660 	EXP 	balloon: autoDraw = False
+43.3660 	EXP 	bank: autoDraw = False
+43.3660 	EXP 	pump: autoDraw = False
+43.3660 	EXP 	earning: autoDraw = False
+43.3660 	EXP 	earningpreviousBalloon: autoDraw = False
+43.3660 	EXP 	debugText: autoDraw = False
+43.3660 	EXP 	text: autoDraw = True
+43.3660 	EXP 	text: autoDraw = False
+43.3660 	EXP 	text: autoDraw = False
+43.3660 	EXP 	balloon: autoDraw = True
+43.3660 	EXP 	bank: autoDraw = True
+43.3660 	EXP 	pump: autoDraw = True
+43.3660 	EXP 	earning: autoDraw = True
+43.3660 	EXP 	earningpreviousBalloon: autoDraw = True
+43.3660 	EXP 	debugText: autoDraw = True
+43.5408 	DATA 	Keypress: l
+43.7022 	DATA 	Keypress: l
+43.8687 	DATA 	Keypress: l
+44.0403 	DATA 	Keypress: l
+44.2018 	DATA 	Keypress: l
+44.3684 	DATA 	Keypress: l
+44.5397 	DATA 	Keypress: l
+44.7397 	DATA 	Keypress: l
+44.9180 	DATA 	Keypress: l
+45.2677 	DATA 	Keypress: l
+45.4842 	DATA 	Keypress: l
+45.6679 	DATA 	Keypress: l
+45.8674 	DATA 	Keypress: l
+46.0719 	DATA 	Keypress: l
+46.2674 	DATA 	Keypress: l
+46.4503 	DATA 	Keypress: l
+46.7001 	DATA 	Keypress: a
+46.7157 	EXP 	Sound soundEffect started
+46.7158 	EXP 	Sound soundEffect stopped
+46.7168 	EXP 	New trial (rep=11, index=0): None
+46.7333 	EXP 	balloon: autoDraw = False
+46.7333 	EXP 	bank: autoDraw = False
+46.7333 	EXP 	pump: autoDraw = False
+46.7333 	EXP 	earning: autoDraw = False
+46.7333 	EXP 	earningpreviousBalloon: autoDraw = False
+46.7333 	EXP 	debugText: autoDraw = False
+46.7333 	EXP 	text: autoDraw = True
+46.7333 	EXP 	text: autoDraw = False
+46.7333 	EXP 	text: autoDraw = False
+46.7333 	EXP 	balloon: autoDraw = True
+46.7333 	EXP 	bank: autoDraw = True
+46.7333 	EXP 	pump: autoDraw = True
+46.7333 	EXP 	earning: autoDraw = True
+46.7333 	EXP 	earningpreviousBalloon: autoDraw = True
+46.7333 	EXP 	debugText: autoDraw = True
+47.1328 	DATA 	Keypress: l
+47.2828 	DATA 	Keypress: l
+47.4378 	DATA 	Keypress: l
+47.6031 	DATA 	Keypress: l
+47.7708 	DATA 	Keypress: l
+47.9487 	DATA 	Keypress: l
+48.1157 	DATA 	Keypress: l
+48.2531 	DATA 	Keypress: l
+48.4317 	DATA 	Keypress: l
+48.5862 	DATA 	Keypress: l
+48.7648 	DATA 	Keypress: l
+48.9482 	DATA 	Keypress: l
+49.1146 	DATA 	Keypress: l
+49.1300 	EXP 	Sound soundEffect started
+49.1299 	EXP 	balloon: autoDraw = False
+49.1299 	EXP 	bank: autoDraw = False
+49.1299 	EXP 	pump: autoDraw = False
+49.1299 	EXP 	earning: autoDraw = False
+49.1299 	EXP 	earningpreviousBalloon: autoDraw = False
+49.1299 	EXP 	debugText: autoDraw = False
+49.1299 	EXP 	text: autoDraw = True
+49.7216 	EXP 	Sound soundEffect reached end of file
+49.7216 	EXP 	Sound soundEffect reached end of file
+50.1134 	EXP 	New trial (rep=12, index=0): None
+50.1294 	EXP 	text: autoDraw = False
+50.1294 	EXP 	text: autoDraw = False
+50.1294 	EXP 	balloon: autoDraw = True
+50.1294 	EXP 	bank: autoDraw = True
+50.1294 	EXP 	pump: autoDraw = True
+50.1294 	EXP 	earning: autoDraw = True
+50.1294 	EXP 	earningpreviousBalloon: autoDraw = True
+50.1294 	EXP 	debugText: autoDraw = True
+50.5344 	DATA 	Keypress: l
+50.6848 	DATA 	Keypress: l
+50.8630 	DATA 	Keypress: l
+51.0464 	DATA 	Keypress: l
+51.2128 	DATA 	Keypress: l
+51.3792 	DATA 	Keypress: l
+51.5462 	DATA 	Keypress: l
+51.7124 	DATA 	Keypress: l
+51.8672 	DATA 	Keypress: l
+52.0455 	DATA 	Keypress: l
+52.2007 	DATA 	Keypress: l
+52.3785 	DATA 	Keypress: l
+52.5455 	DATA 	Keypress: l
+52.6837 	DATA 	Keypress: l
+52.8618 	DATA 	Keypress: l
+53.0282 	DATA 	Keypress: l
+53.0835 	DATA 	Keypress: a
+53.1102 	EXP 	Sound soundEffect started
+53.1160 	EXP 	Sound soundEffect stopped
+53.1170 	EXP 	New trial (rep=13, index=0): None
+53.1408 	EXP 	balloon: autoDraw = False
+53.1408 	EXP 	bank: autoDraw = False
+53.1408 	EXP 	pump: autoDraw = False
+53.1408 	EXP 	earning: autoDraw = False
+53.1408 	EXP 	earningpreviousBalloon: autoDraw = False
+53.1408 	EXP 	debugText: autoDraw = False
+53.1408 	EXP 	text: autoDraw = True
+53.1408 	EXP 	text: autoDraw = False
+53.1408 	EXP 	text: autoDraw = False
+53.1408 	EXP 	balloon: autoDraw = True
+53.1408 	EXP 	bank: autoDraw = True
+53.1408 	EXP 	pump: autoDraw = True
+53.1408 	EXP 	earning: autoDraw = True
+53.1408 	EXP 	earningpreviousBalloon: autoDraw = True
+53.1408 	EXP 	debugText: autoDraw = True
+53.4180 	DATA 	Keypress: l
+53.5773 	DATA 	Keypress: l
+53.7501 	DATA 	Keypress: l
+53.9170 	DATA 	Keypress: l
+54.0935 	DATA 	Keypress: l
+54.2601 	DATA 	Keypress: l
+54.4434 	DATA 	Keypress: l
+54.4589 	EXP 	Sound soundEffect started
+54.4588 	EXP 	balloon: autoDraw = False
+54.4588 	EXP 	bank: autoDraw = False
+54.4588 	EXP 	pump: autoDraw = False
+54.4588 	EXP 	earning: autoDraw = False
+54.4588 	EXP 	earningpreviousBalloon: autoDraw = False
+54.4588 	EXP 	debugText: autoDraw = False
+54.4588 	EXP 	text: autoDraw = True
+54.6612 	DATA 	Keypress: l
+55.0505 	EXP 	Sound soundEffect reached end of file
+55.0506 	EXP 	Sound soundEffect reached end of file
+55.4425 	EXP 	New trial (rep=14, index=0): None
+55.4655 	EXP 	text: autoDraw = False
+55.4655 	EXP 	text: autoDraw = False
+55.4655 	EXP 	balloon: autoDraw = True
+55.4655 	EXP 	bank: autoDraw = True
+55.4655 	EXP 	pump: autoDraw = True
+55.4655 	EXP 	earning: autoDraw = True
+55.4655 	EXP 	earningpreviousBalloon: autoDraw = True
+55.4655 	EXP 	debugText: autoDraw = True
+55.5667 	DATA 	Keypress: l
+55.7423 	DATA 	Keypress: l
+55.9256 	DATA 	Keypress: l
+56.0833 	DATA 	Keypress: l
+56.2750 	DATA 	Keypress: l
+56.4488 	DATA 	Keypress: l
+56.6251 	DATA 	Keypress: l
+56.7816 	DATA 	Keypress: l
+56.9581 	DATA 	Keypress: l
+57.1250 	DATA 	Keypress: l
+57.2912 	DATA 	Keypress: l
+57.4579 	DATA 	Keypress: l
+57.6136 	DATA 	Keypress: l
+57.7740 	DATA 	Keypress: l
+57.9318 	DATA 	Keypress: l
+58.0907 	DATA 	Keypress: l
+58.2406 	DATA 	Keypress: a
+58.2560 	EXP 	Sound soundEffect started
+58.2660 	EXP 	Sound soundEffect stopped
+58.2671 	EXP 	New trial (rep=15, index=0): None
+58.2954 	EXP 	balloon: autoDraw = False
+58.2954 	EXP 	bank: autoDraw = False
+58.2954 	EXP 	pump: autoDraw = False
+58.2954 	EXP 	earning: autoDraw = False
+58.2954 	EXP 	earningpreviousBalloon: autoDraw = False
+58.2954 	EXP 	debugText: autoDraw = False
+58.2954 	EXP 	text: autoDraw = True
+58.2954 	EXP 	text: autoDraw = False
+58.2954 	EXP 	text: autoDraw = False
+58.2954 	EXP 	balloon: autoDraw = True
+58.2954 	EXP 	bank: autoDraw = True
+58.2954 	EXP 	pump: autoDraw = True
+58.2954 	EXP 	earning: autoDraw = True
+58.2954 	EXP 	earningpreviousBalloon: autoDraw = True
+58.2954 	EXP 	debugText: autoDraw = True
+58.5637 	DATA 	Keypress: l
+58.7138 	DATA 	Keypress: l
+58.8896 	DATA 	Keypress: l
+59.0472 	DATA 	Keypress: l
+59.2229 	DATA 	Keypress: l
+59.3894 	DATA 	Keypress: l
+59.5725 	DATA 	Keypress: l
+59.7391 	DATA 	Keypress: l
+59.9057 	DATA 	Keypress: l
+59.9211 	EXP 	Sound soundEffect started
+59.9210 	EXP 	balloon: autoDraw = False
+59.9210 	EXP 	bank: autoDraw = False
+59.9210 	EXP 	pump: autoDraw = False
+59.9210 	EXP 	earning: autoDraw = False
+59.9210 	EXP 	earningpreviousBalloon: autoDraw = False
+59.9210 	EXP 	debugText: autoDraw = False
+59.9210 	EXP 	text: autoDraw = True
+60.0896 	DATA 	Keypress: l
+60.2561 	DATA 	Keypress: l
+60.5101 	EXP 	Sound soundEffect reached end of file
+60.5101 	EXP 	Sound soundEffect reached end of file
+60.5115 	DATA 	Keypress: l
+60.6223 	DATA 	Keypress: l
+60.9044 	EXP 	New trial (rep=16, index=0): None
+60.9247 	EXP 	text: autoDraw = False
+60.9247 	EXP 	text: autoDraw = False
+60.9247 	EXP 	balloon: autoDraw = True
+60.9247 	EXP 	bank: autoDraw = True
+60.9247 	EXP 	pump: autoDraw = True
+60.9247 	EXP 	earning: autoDraw = True
+60.9247 	EXP 	earningpreviousBalloon: autoDraw = True
+60.9247 	EXP 	debugText: autoDraw = True
+61.0944 	DATA 	Keypress: l
+61.3212 	DATA 	Keypress: l
+61.4972 	DATA 	Keypress: l
+61.6800 	DATA 	Keypress: l
+61.8434 	DATA 	Keypress: l
+62.0206 	DATA 	Keypress: l
+62.1872 	DATA 	Keypress: l
+62.3538 	DATA 	Keypress: l
+62.5201 	DATA 	Keypress: l
+62.6915 	DATA 	Keypress: l
+62.8701 	DATA 	Keypress: l
+63.0367 	DATA 	Keypress: l
+63.2198 	DATA 	Keypress: l
+63.3912 	DATA 	Keypress: l
+63.5526 	DATA 	Keypress: l
+63.7076 	DATA 	Keypress: l
+63.8527 	DATA 	Keypress: a
+63.8683 	EXP 	Sound soundEffect started
+63.8556 	EXP 	Sound soundEffect stopped
+63.8563 	EXP 	New trial (rep=17, index=0): None
+63.8742 	EXP 	balloon: autoDraw = False
+63.8742 	EXP 	bank: autoDraw = False
+63.8742 	EXP 	pump: autoDraw = False
+63.8742 	EXP 	earning: autoDraw = False
+63.8742 	EXP 	earningpreviousBalloon: autoDraw = False
+63.8742 	EXP 	debugText: autoDraw = False
+63.8742 	EXP 	text: autoDraw = True
+63.8742 	EXP 	text: autoDraw = False
+63.8742 	EXP 	text: autoDraw = False
+63.8742 	EXP 	balloon: autoDraw = True
+63.8742 	EXP 	bank: autoDraw = True
+63.8742 	EXP 	pump: autoDraw = True
+63.8742 	EXP 	earning: autoDraw = True
+63.8742 	EXP 	earningpreviousBalloon: autoDraw = True
+63.8742 	EXP 	debugText: autoDraw = True
+64.2187 	DATA 	Keypress: l
+64.3734 	DATA 	Keypress: l
+64.5414 	DATA 	Keypress: l
+64.7240 	DATA 	Keypress: l
+64.7505 	EXP 	Sound soundEffect started
+64.7505 	EXP 	balloon: autoDraw = False
+64.7505 	EXP 	bank: autoDraw = False
+64.7505 	EXP 	pump: autoDraw = False
+64.7505 	EXP 	earning: autoDraw = False
+64.7505 	EXP 	earningpreviousBalloon: autoDraw = False
+64.7505 	EXP 	debugText: autoDraw = False
+64.7505 	EXP 	text: autoDraw = True
+64.9023 	DATA 	Keypress: l
+65.3166 	EXP 	Sound soundEffect reached end of file
+65.3167 	EXP 	Sound soundEffect reached end of file
+65.3683 	DATA 	Keypress: l
+65.5346 	DATA 	Keypress: l
+65.7181 	DATA 	Keypress: l
+65.7341 	EXP 	New trial (rep=18, index=0): None
+65.7499 	EXP 	text: autoDraw = False
+65.7499 	EXP 	text: autoDraw = False
+65.7499 	EXP 	balloon: autoDraw = True
+65.7499 	EXP 	bank: autoDraw = True
+65.7499 	EXP 	pump: autoDraw = True
+65.7499 	EXP 	earning: autoDraw = True
+65.7499 	EXP 	earningpreviousBalloon: autoDraw = True
+65.7499 	EXP 	debugText: autoDraw = True
+65.8841 	DATA 	Keypress: l
+66.0505 	DATA 	Keypress: l
+66.2394 	DATA 	Keypress: l
+66.4172 	DATA 	Keypress: l
+66.5883 	DATA 	Keypress: l
+66.7665 	DATA 	Keypress: l
+66.9499 	DATA 	Keypress: l
+67.1168 	DATA 	Keypress: l
+67.2668 	DATA 	Keypress: l
+67.4498 	DATA 	Keypress: l
+67.6162 	DATA 	Keypress: l
+67.7825 	DATA 	Keypress: l
+67.9324 	DATA 	Keypress: l
+68.1162 	DATA 	Keypress: l
+68.3158 	DATA 	Keypress: l
+68.4820 	DATA 	Keypress: l
+68.6320 	DATA 	Keypress: l
+68.9818 	DATA 	Keypress: l
+69.1487 	DATA 	Keypress: l
+69.3151 	DATA 	Keypress: l
+70.1311 	DATA 	Keypress: a
+70.1466 	EXP 	Sound soundEffect started
+70.1463 	EXP 	Sound soundEffect stopped
+70.1471 	EXP 	New trial (rep=19, index=0): None
+70.1659 	EXP 	balloon: autoDraw = False
+70.1659 	EXP 	bank: autoDraw = False
+70.1659 	EXP 	pump: autoDraw = False
+70.1659 	EXP 	earning: autoDraw = False
+70.1659 	EXP 	earningpreviousBalloon: autoDraw = False
+70.1659 	EXP 	debugText: autoDraw = False
+70.1659 	EXP 	text: autoDraw = True
+70.1659 	EXP 	text: autoDraw = False
+70.1659 	EXP 	text: autoDraw = False
+70.1659 	EXP 	balloon: autoDraw = True
+70.1659 	EXP 	bank: autoDraw = True
+70.1659 	EXP 	pump: autoDraw = True
+70.1659 	EXP 	earning: autoDraw = True
+70.1659 	EXP 	earningpreviousBalloon: autoDraw = True
+70.1659 	EXP 	debugText: autoDraw = True
+70.7135 	DATA 	Keypress: l
+70.8631 	DATA 	Keypress: l
+71.0464 	DATA 	Keypress: l
+71.2044 	DATA 	Keypress: l
+71.3799 	DATA 	Keypress: l
+71.5506 	DATA 	Keypress: l
+71.7292 	DATA 	Keypress: l
+71.9124 	DATA 	Keypress: l
+73.0450 	DATA 	Keypress: a
+73.0605 	EXP 	Sound soundEffect started
+73.0758 	EXP 	Sound soundEffect stopped
+73.0765 	EXP 	New trial (rep=20, index=0): None
+73.0959 	EXP 	balloon: autoDraw = False
+73.0959 	EXP 	bank: autoDraw = False
+73.0959 	EXP 	pump: autoDraw = False
+73.0959 	EXP 	earning: autoDraw = False
+73.0959 	EXP 	earningpreviousBalloon: autoDraw = False
+73.0959 	EXP 	debugText: autoDraw = False
+73.0959 	EXP 	text: autoDraw = True
+73.0959 	EXP 	text: autoDraw = False
+73.0959 	EXP 	text: autoDraw = False
+73.0959 	EXP 	balloon: autoDraw = True
+73.0959 	EXP 	bank: autoDraw = True
+73.0959 	EXP 	pump: autoDraw = True
+73.0959 	EXP 	earning: autoDraw = True
+73.0959 	EXP 	earningpreviousBalloon: autoDraw = True
+73.0959 	EXP 	debugText: autoDraw = True
+73.3446 	DATA 	Keypress: l
+73.4828 	DATA 	Keypress: l
+73.6610 	DATA 	Keypress: l
+73.8274 	DATA 	Keypress: l
+73.9941 	DATA 	Keypress: l
+74.1771 	DATA 	Keypress: l
+74.2987 	DATA 	Keypress: l
+74.4772 	DATA 	Keypress: a
+74.4927 	EXP 	Sound soundEffect started
+74.4859 	EXP 	Sound soundEffect stopped
+74.4866 	EXP 	New trial (rep=21, index=0): None
+74.5044 	EXP 	balloon: autoDraw = False
+74.5044 	EXP 	bank: autoDraw = False
+74.5044 	EXP 	pump: autoDraw = False
+74.5044 	EXP 	earning: autoDraw = False
+74.5044 	EXP 	earningpreviousBalloon: autoDraw = False
+74.5044 	EXP 	debugText: autoDraw = False
+74.5044 	EXP 	text: autoDraw = True
+74.5044 	EXP 	text: autoDraw = False
+74.5044 	EXP 	text: autoDraw = False
+74.5044 	EXP 	balloon: autoDraw = True
+74.5044 	EXP 	bank: autoDraw = True
+74.5044 	EXP 	pump: autoDraw = True
+74.5044 	EXP 	earning: autoDraw = True
+74.5044 	EXP 	earningpreviousBalloon: autoDraw = True
+74.5044 	EXP 	debugText: autoDraw = True
+74.9100 	DATA 	Keypress: l
+75.0489 	DATA 	Keypress: l
+75.2313 	DATA 	Keypress: l
+75.3594 	DATA 	Keypress: a
+75.3750 	EXP 	Sound soundEffect started
+75.3759 	EXP 	Sound soundEffect stopped
+75.3767 	EXP 	New trial (rep=22, index=0): None
+75.3946 	EXP 	balloon: autoDraw = False
+75.3946 	EXP 	bank: autoDraw = False
+75.3946 	EXP 	pump: autoDraw = False
+75.3946 	EXP 	earning: autoDraw = False
+75.3946 	EXP 	earningpreviousBalloon: autoDraw = False
+75.3946 	EXP 	debugText: autoDraw = False
+75.3946 	EXP 	text: autoDraw = True
+75.3946 	EXP 	text: autoDraw = False
+75.3946 	EXP 	text: autoDraw = False
+75.3946 	EXP 	balloon: autoDraw = True
+75.3946 	EXP 	bank: autoDraw = True
+75.3946 	EXP 	pump: autoDraw = True
+75.3946 	EXP 	earning: autoDraw = True
+75.3946 	EXP 	earningpreviousBalloon: autoDraw = True
+75.3946 	EXP 	debugText: autoDraw = True
+75.7261 	DATA 	Keypress: l
+75.8592 	DATA 	Keypress: a
+75.8747 	EXP 	Sound soundEffect started
+75.8664 	EXP 	Sound soundEffect stopped
+75.8671 	EXP 	New trial (rep=23, index=0): None
+75.8863 	EXP 	balloon: autoDraw = False
+75.8863 	EXP 	bank: autoDraw = False
+75.8863 	EXP 	pump: autoDraw = False
+75.8863 	EXP 	earning: autoDraw = False
+75.8863 	EXP 	earningpreviousBalloon: autoDraw = False
+75.8863 	EXP 	debugText: autoDraw = False
+75.8863 	EXP 	text: autoDraw = True
+75.8863 	EXP 	text: autoDraw = False
+75.8863 	EXP 	text: autoDraw = False
+75.8863 	EXP 	balloon: autoDraw = True
+75.8863 	EXP 	bank: autoDraw = True
+75.8863 	EXP 	pump: autoDraw = True
+75.8863 	EXP 	earning: autoDraw = True
+75.8863 	EXP 	earningpreviousBalloon: autoDraw = True
+75.8863 	EXP 	debugText: autoDraw = True
+76.0925 	DATA 	Keypress: l
+76.2588 	DATA 	Keypress: a
+76.2744 	EXP 	Sound soundEffect started
+76.2665 	EXP 	Sound soundEffect stopped
+76.2672 	EXP 	New trial (rep=24, index=0): None
+76.2831 	EXP 	balloon: autoDraw = False
+76.2831 	EXP 	bank: autoDraw = False
+76.2831 	EXP 	pump: autoDraw = False
+76.2831 	EXP 	earning: autoDraw = False
+76.2831 	EXP 	earningpreviousBalloon: autoDraw = False
+76.2831 	EXP 	debugText: autoDraw = False
+76.2831 	EXP 	text: autoDraw = True
+76.2831 	EXP 	text: autoDraw = False
+76.2831 	EXP 	text: autoDraw = False
+76.2831 	EXP 	balloon: autoDraw = True
+76.2831 	EXP 	bank: autoDraw = True
+76.2831 	EXP 	pump: autoDraw = True
+76.2831 	EXP 	earning: autoDraw = True
+76.2831 	EXP 	earningpreviousBalloon: autoDraw = True
+76.2831 	EXP 	debugText: autoDraw = True
+76.3919 	DATA 	Keypress: l
+76.5585 	DATA 	Keypress: a
+76.5741 	EXP 	Sound soundEffect started
+76.5757 	EXP 	Sound soundEffect stopped
+76.5764 	EXP 	New trial (rep=25, index=0): None
+76.5927 	EXP 	balloon: autoDraw = False
+76.5927 	EXP 	bank: autoDraw = False
+76.5927 	EXP 	pump: autoDraw = False
+76.5927 	EXP 	earning: autoDraw = False
+76.5927 	EXP 	earningpreviousBalloon: autoDraw = False
+76.5927 	EXP 	debugText: autoDraw = False
+76.5927 	EXP 	text: autoDraw = True
+76.5927 	EXP 	text: autoDraw = False
+76.5927 	EXP 	text: autoDraw = False
+76.5927 	EXP 	balloon: autoDraw = True
+76.5927 	EXP 	bank: autoDraw = True
+76.5927 	EXP 	pump: autoDraw = True
+76.5927 	EXP 	earning: autoDraw = True
+76.5927 	EXP 	earningpreviousBalloon: autoDraw = True
+76.5927 	EXP 	debugText: autoDraw = True
+76.6917 	DATA 	Keypress: l
+77.1748 	DATA 	Keypress: a
+77.1905 	EXP 	Sound soundEffect started
+77.2062 	EXP 	Sound soundEffect stopped
+77.2069 	EXP 	New trial (rep=26, index=0): None
+77.2254 	EXP 	balloon: autoDraw = False
+77.2254 	EXP 	bank: autoDraw = False
+77.2254 	EXP 	pump: autoDraw = False
+77.2254 	EXP 	earning: autoDraw = False
+77.2254 	EXP 	earningpreviousBalloon: autoDraw = False
+77.2254 	EXP 	debugText: autoDraw = False
+77.2254 	EXP 	text: autoDraw = True
+77.2254 	EXP 	text: autoDraw = False
+77.2254 	EXP 	text: autoDraw = False
+77.2254 	EXP 	balloon: autoDraw = True
+77.2254 	EXP 	bank: autoDraw = True
+77.2254 	EXP 	pump: autoDraw = True
+77.2254 	EXP 	earning: autoDraw = True
+77.2254 	EXP 	earningpreviousBalloon: autoDraw = True
+77.2254 	EXP 	debugText: autoDraw = True
+77.3247 	DATA 	Keypress: a
+77.4992 	DATA 	Keypress: a
+77.6956 	DATA 	Keypress: a
+77.9241 	DATA 	Keypress: a
+78.0948 	DATA 	Keypress: a
+78.2946 	DATA 	Keypress: a
+78.4904 	DATA 	Keypress: a
+78.6625 	DATA 	Keypress: a
+78.8444 	DATA 	Keypress: l
+79.0777 	DATA 	Keypress: a
+79.1052 	EXP 	Sound soundEffect started
+79.1056 	EXP 	Sound soundEffect stopped
+79.1064 	EXP 	New trial (rep=27, index=0): None
+79.1221 	EXP 	balloon: autoDraw = False
+79.1221 	EXP 	bank: autoDraw = False
+79.1221 	EXP 	pump: autoDraw = False
+79.1221 	EXP 	earning: autoDraw = False
+79.1221 	EXP 	earningpreviousBalloon: autoDraw = False
+79.1221 	EXP 	debugText: autoDraw = False
+79.1221 	EXP 	text: autoDraw = True
+79.1221 	EXP 	text: autoDraw = False
+79.1221 	EXP 	text: autoDraw = False
+79.1221 	EXP 	balloon: autoDraw = True
+79.1221 	EXP 	bank: autoDraw = True
+79.1221 	EXP 	pump: autoDraw = True
+79.1221 	EXP 	earning: autoDraw = True
+79.1221 	EXP 	earningpreviousBalloon: autoDraw = True
+79.1221 	EXP 	debugText: autoDraw = True
+79.2065 	DATA 	Keypress: l
+79.3728 	DATA 	Keypress: a
+79.3883 	EXP 	Sound soundEffect started
+79.3965 	EXP 	Sound soundEffect stopped
+79.3977 	EXP 	New trial (rep=28, index=0): None
+79.4148 	EXP 	balloon: autoDraw = False
+79.4148 	EXP 	bank: autoDraw = False
+79.4148 	EXP 	pump: autoDraw = False
+79.4148 	EXP 	earning: autoDraw = False
+79.4148 	EXP 	earningpreviousBalloon: autoDraw = False
+79.4148 	EXP 	debugText: autoDraw = False
+79.4148 	EXP 	text: autoDraw = True
+79.4148 	EXP 	text: autoDraw = False
+79.4148 	EXP 	text: autoDraw = False
+79.4148 	EXP 	balloon: autoDraw = True
+79.4148 	EXP 	bank: autoDraw = True
+79.4148 	EXP 	pump: autoDraw = True
+79.4148 	EXP 	earning: autoDraw = True
+79.4148 	EXP 	earningpreviousBalloon: autoDraw = True
+79.4148 	EXP 	debugText: autoDraw = True
+79.4938 	DATA 	Keypress: l
+79.6392 	DATA 	Keypress: a
+79.6548 	EXP 	Sound soundEffect started
+79.6560 	EXP 	Sound soundEffect stopped
+79.6567 	EXP 	New trial (rep=29, index=0): None
+79.6748 	EXP 	balloon: autoDraw = False
+79.6748 	EXP 	bank: autoDraw = False
+79.6748 	EXP 	pump: autoDraw = False
+79.6748 	EXP 	earning: autoDraw = False
+79.6748 	EXP 	earningpreviousBalloon: autoDraw = False
+79.6748 	EXP 	debugText: autoDraw = False
+79.6748 	EXP 	text: autoDraw = True
+79.6748 	EXP 	text: autoDraw = False
+79.6748 	EXP 	text: autoDraw = False
+79.6748 	EXP 	balloon: autoDraw = True
+79.6748 	EXP 	bank: autoDraw = True
+79.6748 	EXP 	pump: autoDraw = True
+79.6748 	EXP 	earning: autoDraw = True
+79.6748 	EXP 	earningpreviousBalloon: autoDraw = True
+79.6748 	EXP 	debugText: autoDraw = True
+79.7436 	DATA 	Keypress: l
+79.8893 	DATA 	Keypress: a
+79.9047 	EXP 	Sound soundEffect started
+79.8964 	EXP 	Sound soundEffect stopped
+79.8973 	EXP 	New trial (rep=30, index=0): None
+79.9128 	EXP 	balloon: autoDraw = False
+79.9128 	EXP 	bank: autoDraw = False
+79.9128 	EXP 	pump: autoDraw = False
+79.9128 	EXP 	earning: autoDraw = False
+79.9128 	EXP 	earningpreviousBalloon: autoDraw = False
+79.9128 	EXP 	debugText: autoDraw = False
+79.9128 	EXP 	text: autoDraw = True
+79.9128 	EXP 	text: autoDraw = False
+79.9128 	EXP 	text: autoDraw = False
+79.9128 	EXP 	balloon: autoDraw = True
+79.9128 	EXP 	bank: autoDraw = True
+79.9128 	EXP 	pump: autoDraw = True
+79.9128 	EXP 	earning: autoDraw = True
+79.9128 	EXP 	earningpreviousBalloon: autoDraw = True
+79.9128 	EXP 	debugText: autoDraw = True
+79.9724 	DATA 	Keypress: l
+80.1278 	DATA 	Keypress: a
+80.1544 	EXP 	Sound soundEffect started
+80.1558 	EXP 	Sound soundEffect stopped
+80.1565 	EXP 	New trial (rep=31, index=0): None
+80.1760 	EXP 	balloon: autoDraw = False
+80.1760 	EXP 	bank: autoDraw = False
+80.1760 	EXP 	pump: autoDraw = False
+80.1760 	EXP 	earning: autoDraw = False
+80.1760 	EXP 	earningpreviousBalloon: autoDraw = False
+80.1760 	EXP 	debugText: autoDraw = False
+80.1760 	EXP 	text: autoDraw = True
+80.1760 	EXP 	text: autoDraw = False
+80.1760 	EXP 	text: autoDraw = False
+80.1760 	EXP 	balloon: autoDraw = True
+80.1760 	EXP 	bank: autoDraw = True
+80.1760 	EXP 	pump: autoDraw = True
+80.1760 	EXP 	earning: autoDraw = True
+80.1760 	EXP 	earningpreviousBalloon: autoDraw = True
+80.1760 	EXP 	debugText: autoDraw = True
+80.1869 	DATA 	Keypress: l
+80.3465 	DATA 	Keypress: a
+80.3709 	EXP 	Sound soundEffect started
+80.3662 	EXP 	Sound soundEffect stopped
+80.3778 	EXP 	balloon: autoDraw = False
+80.3778 	EXP 	bank: autoDraw = False
+80.3778 	EXP 	pump: autoDraw = False
+80.3778 	EXP 	earning: autoDraw = False
+80.3778 	EXP 	earningpreviousBalloon: autoDraw = False
+80.3778 	EXP 	debugText: autoDraw = False
+80.3778 	EXP 	text: autoDraw = True
+80.3778 	EXP 	text: autoDraw = False
+80.3778 	EXP 	text: autoDraw = False
+80.3778 	EXP 	feedbackFinal: height = 0.05
+80.3778 	EXP 	feedbackFinal: height = 0.05
+80.3778 	EXP 	feedbackFinal: height = 0.05
+80.3778 	EXP 	feedbackFinal: text = 'Total earned: 10.45'
+80.3778 	EXP 	feedbackFinal: autoDraw = True
+80.4572 	DATA 	Keypress: l
+80.5899 	DATA 	Keypress: a
+85.3835 	EXP 	feedbackFinal: autoDraw = False
+85.3836 	EXP 	bart: status = STOPPED
+85.8823 	EXP 	window1: mouseVisible = True
