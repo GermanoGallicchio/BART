@@ -5,10 +5,10 @@
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
-    <Param val="u'data/%s_%s_%s_%s' % (expName, expInfo['participant'], expInfo['session'], expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="u'data/%s_%s_%s' % (expName, expInfo['participant'], expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'participant': 'DM999', 'session': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': 'DM999'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -91,7 +91,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="## beginning of each trial (i.e., a new balloon)&amp;#10;&amp;#10;# initial balloon size&amp;#10;ySize_start = 0.2&amp;#10;xSize_start = ySize_start/2&amp;#10;&amp;#10;# (re)set num of pumps made to 0&amp;#10;nPumps=0;&amp;#10;&amp;#10;# initialize to false&amp;#10;popped = False;&amp;#10;&amp;#10;# at what time has this trial started?&amp;#10;&amp;#10;# at which pump is this ballon (trial) going to pop?&amp;#10;# one balloon will pop after the first pump as in the original paper&amp;#10;popPump = maxPumps[trials.thisN]&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="## beginning of each trial (i.e., a new balloon)&amp;#10;&amp;#10;# initial balloon size&amp;#10;ySize_start = 0.2&amp;#10;xSize_start = ySize_start/2&amp;#10;&amp;#10;# (re)set num of pumps made to 0&amp;#10;nPumps=0;&amp;#10;&amp;#10;# initialize to false&amp;#10;popped = False;&amp;#10;&amp;#10;# at what time has this trial started?&amp;#10;&amp;#10;# at which pump is this ballon (trial) going to pop?&amp;#10;# one balloon will pop after the second pump differently from the original paper&amp;#10;# this is the reason: if the balloon pops after the first trial, there is nothing the participant could have done to earn points on that balloon and no decision-making happens in that trial&amp;#10;popPump = maxPumps[trials.thisN]&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="# update balloon's size&amp;#10;&amp;#10;yFactor = 1.5/nTrials # the highest it can grow to fill the screen divided in as many steps as the largest num of pumps ever possible (= same as num of trials)&amp;#10;xFactor = yFactor/2&amp;#10;&amp;#10;xSize = xSize_start + nPumps*xFactor &amp;#10;ySize = ySize_start + nPumps*yFactor&amp;#10;        &amp;#10;        &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="bSize_x = 0.1;&amp;#10;bSize_y = 0.2;&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -233,7 +233,7 @@
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
@@ -250,7 +250,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$&quot;num of pumps made: &quot; + str(nPumps) + &quot;; it will pop after: &quot; + str(popTrial)" valType="str" updates="set every frame" name="text"/>
+        <Param val="$&quot;num of pumps made: &quot; + str(nPumps) + &quot;; the balloon will explode on &quot; + str(popPump) + &quot;+1&quot;" valType="str" updates="set every frame" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -440,6 +440,21 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="intro1">
+      <RoutineSettingsComponent name="intro1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="intro1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
       <ImageComponent name="instructions1" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
@@ -467,21 +482,6 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
-      <RoutineSettingsComponent name="intro1" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="intro1" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
       <KeyboardComponent name="moveOn1" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -608,69 +608,6 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
-      <KeyboardComponent name="moveOn4" plugin="None">
-        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="" valType="str" updates="constant" name="correctAns"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="moveOn4" valType="code" updates="None" name="name"/>
-        <Param val="press" valType="str" updates="constant" name="registerOn"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="last key" valType="str" updates="constant" name="store"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
-    </Routine>
-    <Routine name="practiceStart">
-      <RoutineSettingsComponent name="practiceStart" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="practiceStart" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <ImageComponent name="prePractice" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="instructions/Slide5.JPG" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="prePractice" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(2, 2)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
       <KeyboardComponent name="startPractice" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -696,7 +633,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="import numpy as np&amp;#10;&amp;#10;# number of balloons (i.e., trials) (128 in the original blue-balloon study)&amp;#10;# this is also the highest number of pumps permitted overall &amp;#10;nTrials = 60&amp;#10;&amp;#10;# max pumps that will NOT make the balloon pop but +1 and the balloon will pop&amp;#10;maxPumps = np.arange(nTrials)&amp;#10;np.random.shuffle(maxPumps) # permute the order&amp;#10;&amp;#10;pumpWorth = 0.05 # worth of each pump. it could be &quot;points&quot; as in a videogame, or money (e.g., $0.05 in the original study)&amp;#10;&amp;#10;# initialize values to be updated during the task&amp;#10;bankedPumps = 0&amp;#10;earnings = 0&amp;#10;earnings_thisBalloon = 0&amp;#10;earnings_previousBalloon = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="import numpy as np&amp;#10;&amp;#10;# number of balloons (i.e., trials) (128 in the original blue-balloon study)&amp;#10;# this is also the highest number of pumps that do not make the balloon explode&amp;#10;nTrials = 60&amp;#10;&amp;#10;# max pumps that will NOT make the balloon explode but one more and the balloon will explode&amp;#10;maxPumps = np.arange(nTrials)&amp;#10;np.random.shuffle(maxPumps) # permute the order&amp;#10;&amp;#10;pumpWorth = 0.05 # worth of each pump. it could be &quot;points&quot; as in a videogame, or money (e.g., $0.05 in the original study)&amp;#10;&amp;#10;# initialize values to be updated during the task&amp;#10;bankedPumps = 0&amp;#10;earnings = 0&amp;#10;earnings_thisBalloon = 0&amp;#10;earnings_previousBalloon = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -707,6 +644,23 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="practiceSettings" valType="code" updates="None" name="name"/>
       </CodeComponent>
+    </Routine>
+    <Routine name="practiceStart">
+      <RoutineSettingsComponent name="practiceStart" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="practiceStart" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
     </Routine>
     <Routine name="taskStart">
       <RoutineSettingsComponent name="taskStart" plugin="None">
@@ -776,7 +730,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="import numpy as np&amp;#10;&amp;#10;# number of balloons (i.e., trials) (128 in the original blue-balloon study)&amp;#10;# this is also the highest number of pumps permitted overall &amp;#10;nTrials = 60&amp;#10;&amp;#10;# max pumps that will NOT make the balloon pop but +1 and the balloon will pop&amp;#10;maxPumps = np.arange(nTrials)&amp;#10;np.random.shuffle(maxPumps) # permute the order&amp;#10;&amp;#10;pumpWorth = 0.05 # worth of each pump. it could be &quot;points&quot; as in a videogame, or money (e.g., $0.05 in the original study)&amp;#10;&amp;#10;# initialize values to be updated during the task&amp;#10;bankedPumps = 0&amp;#10;earnings = 0&amp;#10;earnings_thisBalloon = 0&amp;#10;earnings_previousBalloon = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="import numpy as np&amp;#10;&amp;#10;# number of balloons (i.e., trials) (128 in the original blue-balloon study)&amp;#10;# this is also the highest number of pumps that do not make the balloon explode&amp;#10;nTrials = 60&amp;#10;&amp;#10;# max pumps that will NOT make the balloon explode but one more and the balloon will explode&amp;#10;maxPumps = np.arange(nTrials)&amp;#10;np.random.shuffle(maxPumps) # permute the order&amp;#10;&amp;#10;pumpWorth = 0.05 # worth of each pump. it could be &quot;points&quot; as in a videogame, or money (e.g., $0.05 in the original study)&amp;#10;&amp;#10;# initialize values to be updated during the task&amp;#10;bankedPumps = 0&amp;#10;earnings = 0&amp;#10;earnings_thisBalloon = 0&amp;#10;earnings_previousBalloon = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -789,6 +743,21 @@
       </CodeComponent>
     </Routine>
     <Routine name="choicePractice">
+      <RoutineSettingsComponent name="choicePractice" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="choicePractice" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
       <CodeComponent name="balloonSize_2" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -806,21 +775,6 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="balloonSize_2" valType="code" updates="None" name="name"/>
       </CodeComponent>
-      <RoutineSettingsComponent name="choicePractice" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="choicePractice" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
       <PolygonComponent name="balloon_2" plugin="None">
         <Param val="bottom-center" valType="str" updates="constant" name="anchor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -1010,11 +964,11 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.10" valType="num" updates="constant" name="letterHeight"/>
         <Param val="feedbackFinal" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.5)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -1047,6 +1001,33 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="endPractice">
+      <ImageComponent name="practiceEnd" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="instructions/Slide5.JPG" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="practiceEnd" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(2, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
       <RoutineSettingsComponent name="endPractice" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1071,17 +1052,17 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.10" valType="num" updates="constant" name="letterHeight"/>
         <Param val="feedbackFinal_2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.5)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$&quot;Total banked: &quot; + str(earnings)" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
@@ -1101,7 +1082,7 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="last key" valType="str" updates="constant" name="store"/>
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
@@ -1113,7 +1094,6 @@
     <Routine name="intro2"/>
     <Routine name="intro3"/>
     <Routine name="intro4"/>
-    <Routine name="practiceStart"/>
     <LoopInitiator loopType="TrialHandler" name="practiceTrials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -1121,7 +1101,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="10" valType="num"/>
+      <Param name="nReps" updates="None" val="5" valType="num"/>
       <Param name="name" updates="None" val="practiceTrials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
