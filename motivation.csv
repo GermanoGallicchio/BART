@@ -1,0 +1,6 @@
+index,itemText,type,options,ticks,tickLabels,layout,itemColor,itemWidth,responseColor,responseWidth,granularity,font
+1,by the prospects of winning a financial prize,slider,,"0, 100","""not at all"", ""completely""",horiz,,,,,,
+2,because I find this activity enjoyable and interesting,slider,,"0, 100","""not at all"", ""completely""",horiz,,,,,,
+3,by the prospects of outperforming other participants,slider,,"0, 100","""not at all"", ""completely""",horiz,,,,,,
+4,due to my ambition to do the best I can in this activity,slider,,"0, 100","""not at all"", ""completely""",horiz,,,,,,
+5,because I enjoy the challenge of this activity,slider,,"0, 100","""not at all"", ""completely""",horiz,,,,,,
