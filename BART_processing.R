@@ -36,7 +36,7 @@ for (fileIdx in 1:length(fileList)) {
   # import data
   filePath = paste(folderPath,fileList[fileIdx],sep="/")
   recordingInfo = read.csv(filePath, header = TRUE, sep = ",",
-                      dec = ".", fill = TRUE)
+                           dec = ".", fill = TRUE)
   
   # remove rows at the bottom if they show NA
   rows2keep = !is.na(recordingInfo$trials.thisTrialN)
@@ -48,44 +48,56 @@ for (fileIdx in 1:length(fileList)) {
   
   # number of balloons popped and not popped
   temp = as.logical(recordingInfo$popped)
-  nBalloonsPopped    = sum(temp)
-  nBalloonsNotPopped = sum(temp==FALSE)
+  nBalloons_popped    = sum(temp)
+  nBalloons_nonpopped = sum(temp==FALSE)
+  if (nBalloons_popped+nBalloons_nonpopped!=nBalloons) {
+    warning('number of popped and unpopped balloons does not match the total number of balloons')
+  }
   
   # number of pumps
   temp = recordingInfo$nPumps_done
-  nPumpsTot = sum(temp) # total number of pumps in this session
-  nPumpsAdj = sum(recordingInfo$nPumps_done[!as.logical(recordingInfo$popped)]) # adjusted to consider only the pumps done for balloons that did not pop
+  nPumps = sum(temp) # total number of pumps in this session
+  nPumps_popped    = sum(recordingInfo$nPumps_done[as.logical(recordingInfo$popped)]) # number of pumps for popped balloons
+  nPumps_nonpopped = sum(recordingInfo$nPumps_done[!as.logical(recordingInfo$popped)]) # number of pumps for unpopped balloons
+  if (nPumps_popped+nPumps_nonpopped!=nPumps) {
+    warning('number of pumps in popped and unpopped balloons does not match the number of pumps of all balloons')
+  }
   
-  # time in between consecutive pumps
-  keypressesRT_lKey_Tot = NA
+  # time in between consecutive pumps ("l" was the key pressed to pump the balloon)
+  lKey_times = NA
   for (trialIdx in 1:dim(recordingInfo)[1]) {
+    # within each trial, find the responses with 'l' key 
+    # alternatively, all excepet the last response must be 'l' by definition
     temp = recordingInfo$key_resp.keys[trialIdx]
     keypresses = regmatches(temp,gregexpr('[al]', temp))[[1]]
     keypresses_lKey = grepl('l',keypresses)
     
+    # times associated with each keypress
     temp = recordingInfo$key_resp.rt[trialIdx]
     keypressesRT = as.numeric( strsplit(gsub("\\]","",gsub("\\[","",temp)),", ")[[1]] )
     
-    keypressesRT_lKey_Tot[trialIdx] = median(diff(keypressesRT[keypresses_lKey]))
+    lKey_times[trialIdx] = median(diff(keypressesRT[keypresses_lKey]))
   }
-  keypressesRT_lKey_Adj = keypressesRT_lKey_Tot[!as.logical(recordingInfo$popped)] # adjusted to consider only the pumps done for balloons that did not pop  
-
+  lKey_MdnTimes           = median(lKey_times, na.rm=TRUE)
+  lKey_MdnTimes_popped    = median(lKey_times[as.logical(recordingInfo$popped)], na.rm=TRUE)
+  lKey_MdnTimes_nonpopped = median(lKey_times[!as.logical(recordingInfo$popped)], na.rm=TRUE)
+  
   # BART score
   BARTscore = recordingInfo$earnings[dim(recordingInfo)[1]];
-    
+  
   # store in a long format dataset (one row per file, even when multiple files are recorded per participant)
   recordingLvl_long[rowCounter_long,"recording"]       = fileList[fileIdx]
-  recordingLvl_long[rowCounter_long,"nBalloons"]       = nBalloons
-  recordingLvl_long[rowCounter_long,"nBalloonsPopped"] = nBalloonsPopped
-  recordingLvl_long[rowCounter_long,"nBalloonsNotPopped"] = nBalloonsNotPopped
-  recordingLvl_long[rowCounter_long,"nPumpsTot"] = nPumpsTot
-  recordingLvl_long[rowCounter_long,"nPumpsAdj"] = nPumpsAdj
-  recordingLvl_long[rowCounter_long,"keypressesRT_lKey_Tot"] = median(keypressesRT_lKey_Tot)
-  recordingLvl_long[rowCounter_long,"keypressesRT_lKey_Adj"] = median(keypressesRT_lKey_Adj)
+  recordingLvl_long[rowCounter_long,"nBalloons"]           = nBalloons
+  recordingLvl_long[rowCounter_long,"nBalloons_popped"]    = nBalloons_popped
+  recordingLvl_long[rowCounter_long,"nBalloons_nonpopped"] = nBalloons_nonpopped
+  recordingLvl_long[rowCounter_long,"nPumps"]           = nPumps
+  recordingLvl_long[rowCounter_long,"nPumps_popped"]    = nPumps_popped
+  recordingLvl_long[rowCounter_long,"nPumps_nonpopped"] = nPumps_nonpopped
+  recordingLvl_long[rowCounter_long,"lKey_MdnTimes"]           = lKey_MdnTimes
+  recordingLvl_long[rowCounter_long,"lKey_MdnTimes_popped"]    = lKey_MdnTimes_popped
+  recordingLvl_long[rowCounter_long,"lKey_MdnTimes_nonpopped"] = lKey_MdnTimes_nonpopped
   recordingLvl_long[rowCounter_long,"BARTscore"] = BARTscore
 }
-
-
 
 
 
