@@ -28,6 +28,7 @@ fileList = fileList[isBART]
 
 # open each dataset, extract metrics, store data ----
 
+# recording-level dataset (long format)
 recordingLvl_long = data.frame()  # initialize dataframe
 rowCounter_long = 0 # initialize row counter
 for (fileIdx in 1:length(fileList)) {
@@ -63,11 +64,15 @@ for (fileIdx in 1:length(fileList)) {
     warning('number of pumps in popped and unpopped balloons does not match the number of pumps of all balloons')
   }
   
+  # average number of pumps
+  MeanPumps           = nPumps/nBalloons
+  MeanPumps_popped    = nPumps_popped/nBalloons_popped
+  MeanPumps_nonpopped = nPumps_nonpopped/nBalloons_nonpopped
+  
   # time in between consecutive pumps ("l" was the key pressed to pump the balloon)
   lKey_times = NA
   for (trialIdx in 1:dim(recordingInfo)[1]) {
     # within each trial, find the responses with 'l' key 
-    # alternatively, all excepet the last response must be 'l' by definition
     temp = recordingInfo$key_resp.keys[trialIdx]
     keypresses = regmatches(temp,gregexpr('[al]', temp))[[1]]
     keypresses_lKey = grepl('l',keypresses)
@@ -93,15 +98,66 @@ for (fileIdx in 1:length(fileList)) {
   recordingLvl_long[rowCounter_long,"nPumps"]           = nPumps
   recordingLvl_long[rowCounter_long,"nPumps_popped"]    = nPumps_popped
   recordingLvl_long[rowCounter_long,"nPumps_nonpopped"] = nPumps_nonpopped
+  recordingLvl_long[rowCounter_long,"MeanPumps"]           = MeanPumps
+  recordingLvl_long[rowCounter_long,"MeanPumps_popped"]    = MeanPumps_popped
+  recordingLvl_long[rowCounter_long,"MeanPumps_nonpopped"] = MeanPumps_nonpopped
   recordingLvl_long[rowCounter_long,"lKey_MdnTimes"]           = lKey_MdnTimes
   recordingLvl_long[rowCounter_long,"lKey_MdnTimes_popped"]    = lKey_MdnTimes_popped
   recordingLvl_long[rowCounter_long,"lKey_MdnTimes_nonpopped"] = lKey_MdnTimes_nonpopped
   recordingLvl_long[rowCounter_long,"BARTscore"] = BARTscore
 }
 
-
-
 # store 
 filePath = paste(mainFolder,"data_processing",sep="/")
 fileName = paste("BART_long",".csv",sep="")
 write.csv(recordingLvl_long,paste(filePath,fileName,sep="/"), row.names = FALSE)
+
+
+
+# trial-level dataset (long format)
+trialLvl_long = data.frame()  # initialize dataframe
+rowCounter_long = 0 # initialize row counter
+for (fileIdx in 1:length(fileList)) {
+  
+  # import data
+  filePath = paste(folderPath,fileList[fileIdx],sep="/")
+  recordingInfo = read.csv(filePath, header = TRUE, sep = ",",
+                           dec = ".", fill = TRUE)
+  
+  # remove rows at the bottom if they show NA
+  rows2keep = !is.na(recordingInfo$trials.thisTrialN)
+  recordingInfo = recordingInfo[rows2keep,]
+  
+  for (trialIdx in 1:dim(recordingInfo)[1]) {
+    # update row counter
+    rowCounter_long = rowCounter_long + 1  
+    
+    # popped or nonpopped
+    popped = recordingInfo[trialIdx,"popped"]
+    
+    # number of pumps
+    nPumps = recordingInfo[trialIdx,"nPumps_done"]
+    
+    # time in between consecutive pumps
+    # within each trial, find the responses with 'l' key 
+    temp = recordingInfo$key_resp.keys[trialIdx]
+    keypresses = regmatches(temp,gregexpr('[al]', temp))[[1]]
+    keypresses_lKey = grepl('l',keypresses)
+    # times associated with each keypress
+    temp = recordingInfo$key_resp.rt[trialIdx]
+    keypressesRT = as.numeric( strsplit(gsub("\\]","",gsub("\\[","",temp)),", ")[[1]] )
+    lKey_times = median(diff(keypressesRT[keypresses_lKey]))
+    
+    # store in a long format dataset (one row per trial)
+    trialLvl_long[rowCounter_long,"recording"]    = fileList[fileIdx]
+    trialLvl_long[rowCounter_long,"popped"]       = popped
+    trialLvl_long[rowCounter_long,"nPumps"]       = nPumps
+    trialLvl_long[rowCounter_long,"lKey_times"]       = lKey_times
+  }
+}
+
+# store 
+filePath = paste(mainFolder,"data_processing",sep="/")
+fileName = paste("BART_trialLvl_long_raw",".csv",sep="")
+write.csv(trialLvl_long,paste(filePath,fileName,sep="/"), row.names = FALSE)
+
